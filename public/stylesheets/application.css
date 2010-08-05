@@ -1,0 +1,11 @@
+body {
+  background-color: #A11017;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #FFFFFF;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
