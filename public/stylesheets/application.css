@@ -6,6 +6,10 @@ body {
   padding:0px;
 }
 
+.twtr-doc {
+  margin: 150px auto;
+}
+
 hgroup {
   width: 700px;
   margin: 100px auto;
