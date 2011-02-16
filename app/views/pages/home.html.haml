@@ -1,83 +1,84 @@
-%article.header
-  = image_tag 'madison-ruby-logo-large.png'
-  %h3 August 18 - 20, 2011
-  %h4 Overture Center for the Arts
-  %h5
-    201 State Street<br/>
-    Madison, WI 53703<br/>
+%section.main
+  %article.header
+    = image_tag 'madison-ruby-logo-large.png'
+    %h3 August 18 - 20, 2011
+    %h4 Overture Center for the Arts
+    %h5
+      201 State Street<br/>
+      Madison, WI 53703<br/>
 
-  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-  <script>
-  new TWTR.Widget({
-  version: 2,
-  type: 'profile',
-  rpp: 4,
-  interval: 6000,
-  width: 250,
-  height: 300,
-  theme: {
-  shell: {
-  background: '#ffffff',
-  color: '#a60014'
-  },
-  tweets: {
-  background: '#a60014',
-  color: '#ffffff',
-  links: '#d6b6b9'
-  }
-  },
-  features: {
-  scrollbar: false,
-  loop: false,
-  live: false,
-  hashtags: true,
-  timestamp: true,
-  behavior: 'all'
-  }
-  }).render().setUser('madisonruby').start();
-  </script>
+    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+    <script>
+    new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 4,
+    interval: 6000,
+    width: 250,
+    height: 300,
+    theme: {
+    shell: {
+    background: '#ffffff',
+    color: '#a60014'
+    },
+    tweets: {
+    background: '#a60014',
+    color: '#ffffff',
+    links: '#d6b6b9'
+    }
+    },
+    features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: true,
+    timestamp: true,
+    behavior: 'all'
+    }
+    }).render().setUser('madisonruby').start();
+    </script>
 
-%article.spreader
-  %h4
-    Full Day Workshops Are
-    = link_to "Open for Registration", 'http://madisonruby.stagehq.com/'
+  %article.spreader
+    %h4
+      Full Day Workshops Are
+      = link_to "Open for Registration", 'http://madisonruby.stagehq.com/'
 
-%article
-  %heading
-    %h1 Working Effectively With Git
-    %h2 Scott Chacon
-  %section
-    = image_tag 'scott_chacon.jpg', :class => 'headshot'
-    %p
-      Scott Chacon is a Git evangelist and developer working at GitHub.com.
-      He is the author of the Pro Git book by Apress (progit.org), the Git
-      Internals Peepcode PDF as well as the maintainer of the Git homepage
-      (git-scm.com) and the Git Community Book. Scott has presented at
-      LinuxConf.au, OSCON, RuPy, Symfony Live, Ruby Kaigi, RailsConf,
-      RubyConf, Scotland on Rails and a number of local groups and has done
-      corporate training on Git across the country.
+  %article
+    %heading
+      %h1 Working Effectively With Git
+      %h2 with Scott Chacon
+    %section
+      = link_to image_tag('scott_chacon.jpg', :class => 'headshot'), 'http://twitter.com/schacon'
+      %p
+        Scott Chacon is a Git evangelist and developer working at GitHub.com.
+        He is the author of the Pro Git book by Apress (progit.org), the Git
+        Internals Peepcode PDF as well as the maintainer of the Git homepage
+        (git-scm.com) and the Git Community Book. Scott has presented at
+        LinuxConf.au, OSCON, RuPy, Symfony Live, Ruby Kaigi, RailsConf,
+        RubyConf, Scotland on Rails and a number of local groups and has done
+        corporate training on Git across the country.
 
-%article
-  %heading
-    %h1 Ruby on Rails 3 Tutorial Workshop
-    %h2 Michael Hartl
-  %section
-    = image_tag 'michael_hartl_small.jpg', :class => 'headshot'
-    %p
-      Michael Hartl is the author and presenter of the Ruby on Rails
-      Tutorial book and screencast series, coauthor of RailsSpace, and
-      cofounder of Insoshi, a popular Rails social networking platform. He
-      is also the founder of Tau Day and author of The Tau Manifesto.
-      Previously, he taught theoretical and computational physics at the
-      California Institute of Technology  (Caltech), where he received the
-      Lifetime Achievement Award for Excellence in Teaching. Michael is a
-      graduate of Harvard College, has a Ph.D. in Physics from Caltech, and
-      is an alumnus of the Y Combinator entrepreneur program.
+  %article
+    %heading
+      %h1 Ruby on Rails 3 Tutorial Workshop
+      %h2 With Michael Hartl
+    %section
+      = link_to image_tag('michael_hartl_small.jpg', :class => 'headshot'), 'http://twitter.com/mhartl'
+      %p
+        Michael Hartl is the author and presenter of the Ruby on Rails
+        Tutorial book and screencast series, coauthor of RailsSpace, and
+        cofounder of Insoshi, a popular Rails social networking platform. He
+        is also the founder of Tau Day and author of The Tau Manifesto.
+        Previously, he taught theoretical and computational physics at the
+        California Institute of Technology  (Caltech), where he received the
+        Lifetime Achievement Award for Excellence in Teaching. Michael is a
+        graduate of Harvard College, has a Ph.D. in Physics from Caltech, and
+        is an alumnus of the Y Combinator entrepreneur program.
 
-%article.spreader
-  %h4
-    We want you! Call for proposals opening soon.<br/>
-    Follow
-    = link_to "@MadisonRuby", "http://twitter.com/madisonruby"
-    for more information.
+  %article.spreader
+    %h4
+      We want you! Call for proposals opening soon.<br/>
+      Follow
+      = link_to "@MadisonRuby", "http://twitter.com/madisonruby"
+      for more information.
 

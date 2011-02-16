@@ -10,6 +10,10 @@ body {
   padding:0px;
 }
 
+section.main {
+  width: 1500px;
+}
+
 a {
   color: #eb0026;
 }
@@ -24,11 +28,6 @@ a:active {
 
 .twtr-doc {
   margin: 150px auto;
-}
-
-hgroup {
-  width: 700px;
-  margin: 100px auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -50,6 +49,10 @@ article {
 
 article heading h1 {
   font-size: 24px;
+}
+
+article heading h2 {
+  font-size: 20px;
 }
 
 article img.headshot {
