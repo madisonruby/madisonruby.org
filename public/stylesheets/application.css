@@ -1,9 +1,25 @@
+* {
+  font-family: "proxima-nova-1","proxima-nova-2", sans-serif;
+}
+
 body {
-  background-color: #A11017;
+  background-color: #FFF;
   font-size: 1.5em;
   text-align:center;
   margin:50px 0px;
   padding:0px;
+}
+
+a {
+  color: #eb0026;
+}
+
+a:visited {
+  color: #a60014;
+}
+
+a:active {
+  color: #000;
 }
 
 .twtr-doc {
@@ -16,9 +32,44 @@ hgroup {
 }
 
 h1, h2, h3, h4, h5 {
-  color: #FFFFFF;
+  color: #000;
 }
 
 h5 {
   letter-spacing: 3px;
+}
+
+section.content {
+  width: 1000px;
+}
+
+article {
+  width: 500px;
+  float: left;
+}
+
+article heading h1 {
+  font-size: 24px;
+}
+
+article img.headshot {
+  height: 80px;
+  border: 2px solid black;
+}
+
+article section p {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+  padding: 10px;
+}
+
+article.spreader {
+  width: 1000px;
+  height: 150px;
+}
+
+.twtr-widget {
+  margin-top: -125px;
+  clear: both;
 }
