@@ -1,5 +1,5 @@
 %section.main
-  %article.header
+  %article.wide
     = image_tag 'madison-ruby-logo-large.png'
     %h3 August 18 - 20, 2011
     %h4 Overture Center for the Arts
@@ -7,38 +7,7 @@
       201 State Street<br/>
       Madison, WI 53703<br/>
 
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
-    version: 2,
-    type: 'profile',
-    rpp: 4,
-    interval: 6000,
-    width: 250,
-    height: 300,
-    theme: {
-    shell: {
-    background: '#ffffff',
-    color: '#a60014'
-    },
-    tweets: {
-    background: '#a60014',
-    color: '#ffffff',
-    links: '#d6b6b9'
-    }
-    },
-    features: {
-    scrollbar: false,
-    loop: false,
-    live: false,
-    hashtags: true,
-    timestamp: true,
-    behavior: 'all'
-    }
-    }).render().setUser('madisonruby').start();
-    </script>
-
-  %article.spreader
+  %article.wide
     %h4
       Full Day Workshops Are
       = link_to "Open for Registration", 'http://madisonruby.stagehq.com/'
@@ -75,10 +44,41 @@
         graduate of Harvard College, has a Ph.D. in Physics from Caltech, and
         is an alumnus of the Y Combinator entrepreneur program.
 
-  %article.spreader
+  %article.wide
     %h4
       We want you! Call for proposals opening soon.<br/>
       Follow
       = link_to "@MadisonRuby", "http://twitter.com/madisonruby"
       for more information.
+
+  <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+  <script>
+  new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 4,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+  shell: {
+  background: '#ffffff',
+  color: '#a60014'
+  },
+  tweets: {
+  background: '#a60014',
+  color: '#ffffff',
+  links: '#d6b6b9'
+  }
+  },
+  features: {
+  scrollbar: false,
+  loop: false,
+  live: false,
+  hashtags: true,
+  timestamp: true,
+  behavior: 'all'
+  }
+  }).render().setUser('madisonruby').start();
+  </script>
 

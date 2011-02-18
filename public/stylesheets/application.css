@@ -11,7 +11,14 @@ body {
 }
 
 section.main {
-  width: 1500px;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+article.wide {
+  clear: both;
+  width: 960px;
 }
 
 a {
@@ -43,7 +50,7 @@ section.content {
 }
 
 article {
-  width: 500px;
+  width: 480px;
   float: left;
 }
 
