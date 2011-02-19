@@ -1,4 +1,4 @@
-%section.main
+%section.home.main
   %article.wide
     = image_tag 'madison-ruby-logo-large.png'
     %h3 August 18 - 20, 2011
@@ -6,6 +6,10 @@
     %h5
       201 State Street<br/>
       Madison, WI 53703<br/>
+
+  %article.wide
+    %h4= link_to "Submit a proposal", '/proposals/new'
+    .notice= flash[:notice]
 
   %article.wide
     %h4

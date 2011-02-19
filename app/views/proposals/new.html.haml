@@ -1,0 +1,18 @@
+- form_for proposal do |form|
+  %dl
+    %dt= form.label :speakers, 'Name of speaker(s)'
+    %dd= form.text_field :speakers
+
+    %dt= form.label :email, 'Contact Email'
+    %dd= form.text_field :email
+
+    %dt= form.label :title
+    %dd= form.text_field :title
+
+    %dt= form.label :description
+    %dd= form.text_area :description
+
+    %dt= form.label :prerequisites
+    %dd= form.text_area :prerequisites
+
+  = form.submit
