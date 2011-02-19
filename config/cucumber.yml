@@ -1,0 +1,10 @@
+<%
+default_format = 'Cucumber::Formatter::Fuubar'
+rerun = File.file?('rerun.txt') ? IO.read('rerun.txt') : ""
+rerun_opts = rerun.to_s.strip.empty? ? "--format #{ENV['CUCUMBER_FORMAT'] || default_format} features" : "--format #{ENV['CUCUMBER_FORMAT'] || 'pretty'} #{rerun}"
+std_opts = "--format #{ENV['CUCUMBER_FORMAT'] || default_format} --strict --tags ~@wip -r features/support -r features/step_definitions"
+%>
+default: <%= std_opts %> features
+wip: --tags @wip:3 --wip features
+rerun: <%= rerun_opts %> --format rerun --out rerun.txt --strict --tags ~@wip
+progressive: --format <%= default_format %> -r features/support -r features/step_definitions -r features/options/selenium.rb --strict --tags @progressive features
