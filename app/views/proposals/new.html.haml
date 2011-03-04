@@ -13,6 +13,7 @@
     %dd= form.text_area :description
 
     %dt= form.label :prerequisites
-    %dd= form.text_area :prerequisites
-
-  = form.submit
+    %dd
+      = form.text_area :prerequisites
+      <br />
+      = form.submit
